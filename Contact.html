@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/nav.css">
+    <link rel="stylesheet" href="Styles/contact.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/v4-shims.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="icon" href="Images/logo4.png">
+    <title>Coursy-contact</title>
+</head>
+
+<body>
+    <!----------------- header start -------------------->
+    <header class="f-bet">
+        <div class="head f-cen">
+            <a href="#"><img src="Images/logo4.png" style="width: 70px; margin: -6px;" alt="Logo" class="r50 bg-main"></a>
+            <h1><a href="#">oursy</a></h1>
+        </div>
+        <nav>
+            <a href="index.html"><i class="fa-solid fa-bounce fa-home"></i>Home</a>
+            <a href="courses.html"><i class="fa-solid fa-bounce fa-book"></i>Courses</a>
+            <a href="About.html"><i class="fa-solid fa-bounce fa-people-group"></i>About us</a>
+            <a href="Contact.html"><i class="fa-solid fa-bounce fa-phone"></i>Contact us</a>
+            <a href="sign.html"><i class="fa-solid fa-bounce  fa-sign-in"></i>Sign in</a>
+
+        </nav>
+        <div class="btn-sider" id="btn-sider"></div>
+    </header>
+    <div class="sider" id="sider">
+        <img src="images/logo4.png" alt="logo">
+        <h1>Coursy</h1>
+        <ul>
+            <a href="index.html">
+                <li><i class="fa-solid fa-home"></i>Home</li>
+            </a>
+            <a href="courses.html">
+                <li><i class="fa-solid fa fa-shopping-bag"></i>Courses</li>
+            </a>
+            <a href="About.html">
+                <li><i class="fa-solid fa-people-group"></i>About us</li>
+            </a>
+            <a href="Contact.html">
+                <li><i class="fa-solid fa-phone"></i>Contact us</li>
+            </a>
+            <a href="sign.html">
+                <li><i class="fa-solid fa-sign-in"></i>Sign in</li>
+            </a>
+        </ul>
+    </div>
+    
+    <!----------------- header end -------------------->
+
+
+    <!----------------- container start -------------------->
+    <div class="container f-cen p32 g32">
+        <form action="" method="post" class="p24 f-cen r32">
+            <h2 class="txt-sub">Send Your Message</h2>
+            <div class="input-box">
+                <input type="text" name="fname" id="fname" required tabindex="1" autofocus>
+                <label for="fname">first name</label>
+            </div>
+            <div class="input-box">
+                <input type="text" name="lname" id="lname" required tabindex="2">
+                <label for="lname">last name</label>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" id="email" required tabindex="3">
+                <label for="email">E-mail</label>
+            </div>
+            <div class="input-box">
+                <input type="tel" name="tel" id="tel" required tabindex="4">
+                <label for="tel">Mobile</label>
+            </div>
+            <div class="input-box" style="width: 100%;">
+                <textarea name="message" maxlength="222" id="message" rows="5" required tabindex="5"></textarea>
+                <label for="message">Your Message</label>
+                <p id="count" class="txt-sub p12">0 / 222</p>
+            </div>
+            <div class="f-bet wid100">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+  <!-----------------footer start -------------------->
+
+  <footer class="f-evn">
+    <ul>
+        <li><a href="index.html"><i class="fa-solid fa-bounce fa-home"></i>Home</a></li>
+        <li><a href="courses.html"><i class="fa-solid fa-bounce fa-book"></i>Courses</a></li>
+        <li><a href="About.html"><i class="fa-solid fa-bounce fa-people-group"></i>About us</a></li>
+        <li><a href="Contact.html"><i class="fa-solid fa-bounce fa-phone"></i>Contact us</a></li>
+        <li><a href="sign.html"><i class="fa-solid fa-bounce  fa-sign-in"></i>Sign in</a></li>
+
+    </ul>
+    <ul>
+        <li><a href="#"><i class="fa-brands fa-bounce fa-facebook"></i>Facebook</a></li>
+        <li><a href="#"><i class="fa-brands fa-bounce fa-instagram"></i>Instagram</a></li>
+        <li><a href="#"><i class="fa-brands fa-bounce fa-twitter"></i>Twitter</a></li>
+        <li><a href="#"><i class="fa-brands fa-bounce fa-telegram"></i>Telegram</a></li>
+        <li><a href="#"><i class="fa-brands fa-bounce fa-whatsapp"></i>Whatsapp</a></li>
+    </ul>
+    <div class="head f-cen f-col">
+        <div class="hh f-cen">
+            <a href="#"><img src="Images/logo4.png" style="width: 70px; margin-right: -11px;" alt="Logo"></a>
+            <h1><a href="#">oursy</a></h1>
+        </div>
+        <p class="txt-sub txt-cen">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, quas.</p>
+    </div>
+    <div class="cop wid100 f-cen p20" style=" min-height: 15vh;">
+        <div class="pp" style="border-top: 2px solid var(--sub) ; width: 80%;">
+       <p class="txt-cen p20 txt-sub2"> &copy;Copy rights</p>
+    </div>
+    </div>
+</footer>
+
+<!-----------------footer end -------------------->
+
+<script>
+    message.oninput = () => {
+    count.textContent = message.value.length + " / 222";
+}
+</script>
+<script src="Scripts/script.js"></script>
+</body>
+
+</html>

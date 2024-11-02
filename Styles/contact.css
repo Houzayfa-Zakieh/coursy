@@ -1,0 +1,64 @@
+.container{
+    background-color: var(--sub2);
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px !important;
+}
+
+form {
+    max-width: 650px;
+    background-color: var(--main);
+    backdrop-filter: blur(3px);
+    gap: 40px 24px;
+    box-shadow: 10px 10px 20px var(--sub);
+}
+
+form h2{
+    text-align: center;
+    width: 100%;
+}
+
+.input-box {
+    width: 280px;
+    position: relative;
+}
+
+.input-box label{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 18px;
+    pointer-events: none;
+    color: var(--sub);
+
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label,
+.input-box textarea:focus ~ label,
+.input-box textarea:valid ~ label{
+    top: -18px;
+    
+}
+.input-box input:focus,
+.input-box textarea:focus{
+    border-bottom: 3px solid orangered;
+}
+.input-box input:valid,
+.input-box textarea:valid{
+    border-bottom: 3px solid greenyellow;
+}
+.input-box input,
+.input-box textarea{
+    width: 100%;
+    font-size: 18px;
+    padding: 7px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid var(--sub2);
+    color: var(--sub2);
+}
+.input-box textarea{
+    resize: none;
+}

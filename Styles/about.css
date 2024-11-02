@@ -1,0 +1,16 @@
+.foot .head h1 a{
+    text-decoration: none;
+    font-size: 60px;
+}
+.foot .head img{
+    width: 80px;
+}
+.container{
+    padding-top: 70px;
+}    
+iframe{
+    border: 10px solid var(--sub);
+}
+.container .center .text a{
+    margin-top: 15px ;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Styles/sign2.css" />
+  <link rel="stylesheet" href="Styles/main.css" />
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css" />
+  <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/v4-shims.min.css" />
+  <link rel="icon" href="Images/logo4.png" />
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <div class="container f-cen bg-sub2">
+    <form action="sign.html" class="f-evn bg-main g24 p24 r24">
+      <h1 class="txt-sub wid100 txt-cen">Sing Up</h1>
+      <div class="input-Box f-cen g12">
+        <label for="First" class="txt-sub fo-size20">First Name</label>
+        <input type="First" name="First" id="First" placeholder="Enter your First Name" required tabindex="1" />
+      </div>
+      <div class="input-Box f-cen g12">
+        <label for="Last" class="txt-sub fo-size20">Last Name</label>
+        <input type="Last" name="Last" id="Last" placeholder="Enter your Last Name" required tabindex="2" />
+      </div>
+
+      <div class="input-Box f-cen g12">
+        <label for="email" class="txt-sub fo-size20">E-mail</label>
+        <input type="email" name="email" id="email" autofocus required tabindex="3" placeholder="Enter your E-mail"  />
+      </div>
+      <div class="input-Box f-cen g12">
+        <label for="password" class="txt-sub fo-size20">Password</label>
+        <input type="password" name="password" id="password" required tabindex="4" placeholder="Enter your Password" />
+      </div>
+      <div class="input-Box f-cen g12 wid100">
+        <label for="tel" class="txt-sub fo-size20">Mobile</label>
+        <input type="tel" name="tel" id="tel" required tabindex="5" placeholder="Enter your Mobile Number" />
+      </div>
+      <div class="ggender f-ard g40">
+        <div class="genderr f-cen g12">
+          <label for="Gender" class="txt-sub">Gender :</label>
+          <input type="radio" name="Gender" id="radio" value="female" required tabindex="6" />
+          <label for="female" class="txt-sub">Female</label>
+          <input type="radio" name="Gender" id="radio" value="male" required tabindex="7" />
+          <label for="male" class="txt-sub">Male</label>
+        </div>
+        <div class="ageee f-bet g12">
+          <div class="agee f-cen g12">
+            <label for="date" class="txt-sub">Age :</label>
+            <input type="date" name="date" id="date" />
+          </div>
+        </div>
+      </div>
+
+      <div class="mother f-ard g40">
+        <div class="study f-cen g12">
+          <label for="lan" class="txt-sub">study :</label>
+          <select name="" id="">
+            <option value="" class="txt-sub">Doctor</option>
+            <option value="" class="txt-sub" selected>Engineer</option>
+            <option value="" class="txt-sub">teacher</option>
+            <option value="" class="txt-sub">none</option>
+
+
+          </select>
+        </div>
+        <div class="sel f-cen g12">
+          <label for="lan" class="txt-sub">Mother Language :</label>
+          <select name="" id="">
+            <option value="" class="txt-sub">Arabic</option>
+            <option value="" class="txt-sub" selected>English</option>
+            <option value="" class="txt-sub">France</option>
+          </select>
+        </div>
+      </div>
+      <div class="texx wid100">
+        <label for="area" class="txt-sub">Nots :</label>
+        <textarea name="area" rows="5" id="area" class="wid100" placeholder="Tell us more about yourself..," tabindex="8"></textarea>
+      </div>
+      <div class="ggender f-bet g40 wid100 ">
+        <input type="reset" value="reset" class="btn" >
+        <button type="submit" class="btn" class="txt-sub">Send</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

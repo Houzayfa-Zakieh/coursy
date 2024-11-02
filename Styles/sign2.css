@@ -1,0 +1,16 @@
+form {
+    width: 800px;
+}
+
+form input,
+textarea {
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 3px solid var(--sub2);
+    color: var(--sub);
+    font-size: 18px;
+}
+::placeholder{
+    color: var(--sub2);
+}
